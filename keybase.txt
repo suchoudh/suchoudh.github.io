@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/suchoudh
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://onelife.in
+  * I am suchoudh (https://keybase.io/suchoudh) on keybase.
+  * I have a public key with fingerprint CDA9 249A 9E45 E33B A392  7B3A 2226 EE91 5B2F 3CA0
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01016e397deaa6e73d33bc0869cd6f86eb1d4dc906c4c1f19fa7dbe1ac73e80c64610a",
+      "fingerprint": "cda9249a9e45e33ba3927b3a2226ee915b2f3ca0",
+      "host": "keybase.io",
+      "key_id": "2226ee915b2f3ca0",
+      "kid": "01016e397deaa6e73d33bc0869cd6f86eb1d4dc906c4c1f19fa7dbe1ac73e80c64610a",
+      "uid": "96d1a0eebe045398c15515a5b8e96519",
+      "username": "suchoudh"
+    },
+    "service": {
+      "hostname": "onelife.in",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1513075758,
+  "expire_in": 157680000,
+  "prev": "38367c34c3949935880e92de48c69281625f14468afbb3e012e86ba7afa8e73e",
+  "seqno": 3,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMIxAnicrVJdaBVHGL2JGtuLmpjalzYxOqIpek13dnZnZ26KkUQikgSKCC1BuM7O
+fpu7GHevd/feGCXgT4MEmxolQTQoglooNqJBQx8UEyP6IIIgChoJggWlttj60Aqt
+tbPBvvnovAxzOOfMOR/f9fmzEsmSqlRN22h/T2PJrYmhQqL984t1u5AdON0ovQtt
+hZkLOh0Io8xWz0FppGENUyDcckAIChZxCLGlxiiXDnUZBRs7hiO5RqUhsYu5KyzH
+BiykRYBpkhoUawKlkOv5HZDP5T0/UrbSEVw3uOBgmKAcBeG6ZROh6zoF4Ni0dZdI
+oSlhNghjhQpnixDqvEBh6pGZifcO/nvOXZix49TBQgOwQTNMwpnEpolNYdoMODUx
+j4kh5H2xDRQ7LMhsUHCyqCeFFFr0JMSDjZu8ZQQ+dHquauMrZS4fRIEMOhWejaJc
+mI51UXcuJnaBnXlrkbE931FTVIoi5EMv8FEaK6aMvNgTm5holmmZLIVgR87LQ8aL
+GaZFmaZO/A8UlSVhhFqSGJJwg3NiMqYB1x0wmKRcZ5jqposNgzLh2jYBDevAqC0s
+4QqmBgkoLrXdD1CaqJiiIy7sdfgiKuQB9Vwb3zw7UZJMlM0pjbcrkfyw4v+dG56c
++2Zb0/bq0rFjQwv+dT+pPYVub1ianvwtfJmsbRytqSr3e+tbB86c/jRT99e8RTen
+Li8avLXsg40PTj+ZykZif8Py183sj+Vdg0/PVlRah3e/fpH9LvO8dgP5YdPq9guL
+awY+2jLyqNj669199Q1NrW2VXxRWvunesvZaKSpr7lt1b2cxO/11y/D5Lx90j6+3
+f382XlUzkF7849jV1JKywYlNz7+5s/dG9chm/2lp8ejhE+G3bUfKF/beu7/i7/st
+7WNfffbwl6N9U7Ma/+w6wi6cWD1Q3vLs45PwU+XIpcl1xyYPVTcvm3fl+J7a6Yb9
+5w6ueaF//7P3+MrLVxP9zcmKs9P9wwvRaEffjX8O/AfxUzkR
+=S51o
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/suchoudh
+
+==================================================================

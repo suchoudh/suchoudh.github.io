@@ -1,0 +1,732 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<link rel=File-List href="Trnsys16-ReleaseNotes_files/filelist.xml">
+<link rel=Edit-Time-Data href="Trnsys16-ReleaseNotes_files/editdata.mso">
+<link rel=OLE-Object-Data href="Trnsys16-ReleaseNotes_files/oledata.mso">
+
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:" ";}
+@page
+	{margin:1.0in .75in 1.0in .75in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;}
+tr
+	{mso-height-source:auto;}
+col
+	{mso-width-source:auto;}
+br
+	{mso-data-placement:same-cell;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl24
+	{mso-style-parent:style0;
+	font-size:16.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl25
+	{mso-style-parent:style0;
+	font-size:14.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;}
+.xl26
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	border:.5pt solid windowtext;
+	background:#FFFFCC;
+	mso-pattern:auto none;}
+.xl27
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0000;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#FFFFCC;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl28
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#FFFFCC;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl29
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl30
+	{mso-style-parent:style0;
+	text-align:left;}
+.xl31
+	{mso-style-parent:style0;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	text-align:left;
+	white-space:normal;}
+.xl32
+	{mso-style-parent:style0;
+	text-align:left;
+	white-space:normal;}
+.xl33
+	{mso-style-parent:style0;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	border:.5pt solid windowtext;
+	background:#FFFFCC;
+	mso-pattern:auto none;
+	white-space:normal;}
+.xl34
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0000;
+	vertical-align:middle;
+	white-space:normal;}
+.xl35
+	{mso-style-parent:style0;
+	font-size:9.0pt;
+	font-family:Arial, sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	white-space:normal;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <x:ExcelWorkbook>
+  <x:ExcelWorksheets>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet1</x:Name>
+    <x:WorksheetOptions>
+     <x:Print>
+      <x:ValidPrinterInfo/>
+      <x:HorizontalResolution>600</x:HorizontalResolution>
+      <x:VerticalResolution>600</x:VerticalResolution>
+     </x:Print>
+     <x:Selected/>
+     <x:Panes>
+      <x:Pane>
+       <x:Number>3</x:Number>
+       <x:ActiveRow>3</x:ActiveRow>
+      </x:Pane>
+     </x:Panes>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+    <x:ConditionalFormatting>
+     <x:Range>$A$30:$A$40,$A$11:$A$24</x:Range>
+     <x:Condition>
+      <x:Value1>AND((#REF!=1),OR((#REF!=&quot;conf&quot;),(#REF!=&quot;open&quot;)))</x:Value1>
+      <x:Format Style='font-weight:400;background:#FF8080'/>
+     </x:Condition>
+     <x:Condition>
+      <x:Value1>AND((#REF!=2),OR((#REF!=&quot;conf&quot;),(#REF!=&quot;open&quot;)))</x:Value1>
+      <x:Format Style='color:windowtext;background:#FFCC99'/>
+     </x:Condition>
+     <x:Condition>
+      <x:Value1>AND(OR((#REF!=3),(#REF!=4)),OR((#REF!=&quot;conf&quot;),(#REF!=&quot;open&quot;)))</x:Value1>
+      <x:Format Style='background:#FFFFCC;mso-pattern:#FFCC99 gray-25'/>
+     </x:Condition>
+    </x:ConditionalFormatting>
+    <x:ConditionalFormatting>
+     <x:Range>$B$57:$B$59,$B$64:$B$68,$B$11:$B$24,$B$30:$B$41,$B$46:$B$52</x:Range>
+     <x:Condition>
+      <x:Value1>(#REF!=1)</x:Value1>
+      <x:Format Style='background:#FFFFCC'/>
+     </x:Condition>
+    </x:ConditionalFormatting>
+    <x:ConditionalFormatting>
+     <x:Range>$A$25:$A$26</x:Range>
+     <x:Condition>
+      <x:Value1>AND((#REF!=1),OR((#REF!=&quot;conf&quot;),(#REF!=&quot;open&quot;)))</x:Value1>
+      <x:Format Style='font-weight:400;background:#FF8080'/>
+     </x:Condition>
+     <x:Condition>
+      <x:Value1>AND((#REF!=2),OR((#REF!=&quot;conf&quot;),(#REF!=&quot;open&quot;)))</x:Value1>
+      <x:Format Style='color:windowtext;background:#FFCC99'/>
+     </x:Condition>
+     <x:Condition>
+      <x:Value1>AND(OR((#REF!=3),(#REF!=4)),OR((#REF!=&quot;conf&quot;),(#REF!=&quot;open&quot;)))</x:Value1>
+      <x:Format Style='background:#FFFFCC;mso-pattern:#FFCC99 gray-25'/>
+     </x:Condition>
+    </x:ConditionalFormatting>
+    <x:ConditionalFormatting>
+     <x:Range>$B$25:$B$26</x:Range>
+     <x:Condition>
+      <x:Value1>(#REF!=1)</x:Value1>
+      <x:Format Style='background:#FFFFCC'/>
+     </x:Condition>
+    </x:ConditionalFormatting>
+    <x:ConditionalFormatting>
+     <x:Range>$A$41,$A$46:$A$51</x:Range>
+     <x:Condition>
+      <x:Value1>AND((#REF!=1),OR((#REF!=&quot;conf&quot;),(#REF!=&quot;open&quot;)))</x:Value1>
+      <x:Format Style='font-weight:400;background:#FF8080'/>
+     </x:Condition>
+     <x:Condition>
+      <x:Value1>AND((#REF!=2),OR((#REF!=&quot;conf&quot;),(#REF!=&quot;open&quot;)))</x:Value1>
+      <x:Format Style='color:windowtext;background:#FFCC99'/>
+     </x:Condition>
+     <x:Condition>
+      <x:Value1>AND(OR((#REF!=3),(#REF!=4)),OR((#REF!=&quot;conf&quot;),(#REF!=&quot;open&quot;)))</x:Value1>
+      <x:Format Style='background:#FFFFCC;mso-pattern:#FFCC99 gray-25'/>
+     </x:Condition>
+    </x:ConditionalFormatting>
+    <x:ConditionalFormatting>
+     <x:Range>$A$52,$A$57:$A$59,$A$64:$A$68</x:Range>
+     <x:Condition>
+      <x:Value1>AND((#REF!=1),OR((#REF!=&quot;conf&quot;),(#REF!=&quot;open&quot;)))</x:Value1>
+      <x:Format Style='font-weight:400;background:#FF8080'/>
+     </x:Condition>
+     <x:Condition>
+      <x:Value1>AND((#REF!=2),OR((#REF!=&quot;conf&quot;),(#REF!=&quot;open&quot;)))</x:Value1>
+      <x:Format Style='color:windowtext;background:#FFCC99'/>
+     </x:Condition>
+     <x:Condition>
+      <x:Value1>AND(OR((#REF!=3),(#REF!=4)),OR((#REF!=&quot;conf&quot;),(#REF!=&quot;open&quot;)))</x:Value1>
+      <x:Format Style='background:#FFFFCC;mso-pattern:#FFCC99 gray-25'/>
+     </x:Condition>
+    </x:ConditionalFormatting>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet2</x:Name>
+    <x:WorksheetOptions>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+   <x:ExcelWorksheet>
+    <x:Name>Sheet3</x:Name>
+    <x:WorksheetOptions>
+     <x:ProtectContents>False</x:ProtectContents>
+     <x:ProtectObjects>False</x:ProtectObjects>
+     <x:ProtectScenarios>False</x:ProtectScenarios>
+    </x:WorksheetOptions>
+   </x:ExcelWorksheet>
+  </x:ExcelWorksheets>
+  <x:WindowHeight>12405</x:WindowHeight>
+  <x:WindowWidth>15180</x:WindowWidth>
+  <x:WindowTopX>480</x:WindowTopX>
+  <x:WindowTopY>60</x:WindowTopY>
+  <x:ProtectStructure>False</x:ProtectStructure>
+  <x:ProtectWindows>False</x:ProtectWindows>
+ </x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+
+<body link=blue vlink=purple>
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=699 style='border-collapse:
+ collapse;table-layout:fixed;width:525pt'>
+ <col width=62 style='mso-width-source:userset;mso-width-alt:2267;width:47pt'>
+ <col width=637 style='mso-width-source:userset;mso-width-alt:23296;width:478pt'>
+ <tr height=27 style='height:20.25pt'>
+  <td colspan=2 height=27 class=xl24 width=699 style='height:20.25pt;
+  width:525pt'>TRNSYS 16 Release notes</td>
+ </tr>
+ <tr height=20 style='mso-height-source:userset;height:15.0pt'>
+  <td height=20 colspan=2 class=xl24 style='height:15.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td colspan=2 height=17 class=xl29 style='height:12.75pt'>Version 16.00.0034</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 class=xl29 style='height:12.75pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr class=xl30 height=135 style='mso-height-source:userset;height:101.25pt'>
+  <td colspan=2 height=135 class=xl31 width=699 style='height:101.25pt;
+  width:525pt'>Please note that printed documentation is not delivered with
+  this release. A provisional documentation set is available in electronic form
+  (use the &quot;TRNSYS 16 manual&quot; shortcut created during installation or
+  browse to %TRNSYS16%\Documentation\Trnsys16-MainMenu.pdf). The TRNSYS
+  developers are working on some remaining program and documentation issues,
+  and the documentation will be updated with first user feedback. Therefore,
+  the printed version of the manual will be shipped with the first update of
+  TRNSYS.<br>
+    <br>
+    Please also note that distributors have different policies regarding
+  printed manuals. Do not hesitate to contact your distributor directly if you
+  have any additional question.</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 class=xl29 style='height:12.75pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=27 style='height:20.25pt'>
+  <td height=27 colspan=2 class=xl24 style='height:20.25pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=24 style='height:18.0pt'>
+  <td height=24 class=xl25 colspan=2 style='height:18.0pt;mso-ignore:colspan'>0.
+  Known issues with the package in general</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl33 width=62 style='height:12.75pt;width:47pt'>Issue Nb</td>
+  <td class=xl33 width=637 style='border-left:none;width:478pt'>Description</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl27 align=right width=62 style='height:24.0pt;
+  border-top:none;width:47pt' x:num="6">0006</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Documentation
+  : pdf index (pdx) does not seem to be compatible with some versions of Adobe
+  Acrobat 5.0. Please upgrade to Acrobat 6.0 if you experience problems</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl27 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num="8">0008</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>TRNSYS
+  16 includes Type 97, which is a link to CONTAM. That feature is currently not
+  documented</td>
+ </tr>
+ <tr height=48 style='height:36.0pt'>
+  <td height=48 class=xl27 align=right width=62 style='height:36.0pt;
+  border-top:none;width:47pt' x:num="13">0013</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>The
+  Intel Fortran Compiler is not fully supported in this release. This only
+  apply to users who want to recompile the main TRNSYS DLL. With the new
+  multi-DLL architecture, any Type can be written in any language and compiled
+  with any compiler, provided that it is compiled into a DLL placed in \Userlib</td>
+ </tr>
+ <tr height=64 style='height:48.0pt'>
+  <td height=64 class=xl27 align=right width=62 style='height:48.0pt;
+  border-top:none;width:47pt' x:num="19">0019</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>In
+  some circumstances, an empty file is created with a name that is the first
+  part of the path to TRNSYS before the first space (by default C:\Program , no
+  extension). If that file is there the Shell Execute function in windows stops
+  working properly. The symptoms in TRNSYS are that TRNEdit gives error 193
+  (not a valid Win32 application) when trying to launch TRNExe, Automatic call
+  to TRNBuild fails, Studio C++ and Fortran export fail</td>
+ </tr>
+ <tr height=48 style='height:36.0pt'>
+  <td height=48 class=xl27 align=right width=62 style='height:36.0pt;
+  border-top:none;width:47pt' x:num="28">0028</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>There
+  are currently about 20 examples, but new examples will be added in future
+  release. Examples are currently not documented except for the ones that are
+  described step-by-step in the Getting Started guide. To learn more about the
+  examples, open them in the simulation Studio and read the comments</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl27 align=right width=62 style='height:24.0pt;
+  border-top:none;width:47pt' x:num="31">0031</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Several
+  examples can be found in the \Examples directory. Not all of them are
+  referenced in the manuals, please browse them in the Simulation Studio and
+  read the short comments in the project itself</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl27 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num="34">0034</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Documentation:
+  Volume 2 is not fully integrated with the other volumes of the TRNSYS manual</td>
+ </tr>
+ <tr height=48 style='height:36.0pt'>
+  <td height=48 class=xl27 align=right width=62 style='height:36.0pt;
+  border-top:none;width:47pt' x:num="38">0038</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Documentation:
+  Volume 4 is generated directly from the proformas in the Simulation Studio in
+  order to insure consistency. However, this may be less convenient for users
+  who write input files by hand because each proforma (not each Type) has one
+  entry in the manual</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl27 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num="39">0039</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Documentation:
+  Volume 5 is missing</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl27 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num="42">0042</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Documentation:
+  Volume 6 is not fully integrated with the other volumes of the TRNSYS manual</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl27 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num="44">0044</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Documentation:
+  Volume 7's basic example is just a reference to the Getting Started manual</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl27 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num="45">0045</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Documentation:
+  Volume 7 does not include a complete TRNSED language reference</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl27 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num="46">0046</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Documentation:
+  Volume 8 is incomplete</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl27 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num="48">0048</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Documentation:
+  Volume 9 has some inaccuracies in the latitude values (US-TMY2 list of
+  stations)</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl27 align=right width=62 style='height:24.0pt;
+  border-top:none;width:47pt' x:num="56">0056</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>For
+  Types that require an input file, some examples are available in
+  \Examples\Data Files. More examples will be added in future releases.</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl34 style='height:12.75pt'></td>
+  <td class=xl35></td>
+ </tr>
+ <tr height=24 style='height:18.0pt'>
+  <td height=24 class=xl25 colspan=2 style='height:18.0pt;mso-ignore:colspan'>1.
+  Known issues with the Source Code</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl33 width=62 style='height:12.75pt;width:47pt'>Issue Nb</td>
+  <td class=xl33 width=637 style='border-left:none;width:478pt'>Description</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl27 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num>1002</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'
+  x:str="Type 15 has been removed. That Type was not available through IISiBat  in TRNSYS 15 ">Type
+  15 has been removed. That Type was not available through IISiBat<span
+  style='mso-spacerun:yes'>  </span>in TRNSYS 15<span
+  style='mso-spacerun:yes'> </span></td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl27 align=right width=62 style='height:24.0pt;
+  border-top:none;width:47pt' x:num>1003</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Type
+  26 has been removed. That Type is obsolete. An empty routine has been added
+  so projects can be run but no output is produced</td>
+ </tr>
+ <tr height=48 style='height:36.0pt'>
+  <td height=48 class=xl27 align=right width=62 style='height:36.0pt;
+  border-top:none;width:47pt' x:num>1006</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Type
+  61 (call to ExtDll) conflicts with the new DLL-based architecture and has
+  been discontinued. If you were using Type 61, please upgrade your component
+  to TRNSYS 16 and compile it into an external DLL as any other Type</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl27 align=right width=62 style='height:24.0pt;
+  border-top:none;width:47pt' x:num>1008</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Type
+  109 has not been fully updated to the TRNSYS 16 standard. One side effect is
+  that outputs are always 0 at the initial time step</td>
+ </tr>
+ <tr height=48 style='height:36.0pt'>
+  <td height=48 class=xl27 align=right width=62 style='height:36.0pt;
+  border-top:none;width:47pt' x:num>1010</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Type
+  28: Printing of 12 summaries at a time (mode 2) to the listing file might
+  beinterrupted if other components print to the lst file. Using Type 28 to
+  output results to the lst file is not recommended, you should use n external
+  file</td>
+ </tr>
+ <tr height=48 style='height:36.0pt'>
+  <td height=48 class=xl27 align=right width=62 style='height:36.0pt;
+  border-top:none;width:47pt' x:num>1046</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>It
+  is currently not possible to control Type 25, 28 and 65 printed output
+  format. The number of printed digits has been increased since TRNSYS 15 and
+  the new format is not always easy to read. It will import correctly in most
+  spreadsheet programs such as MS Excel</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl27 align=right width=62 style='height:24.0pt;
+  border-top:none;width:47pt' x:num>1049</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Type
+  60 has been enhanced with regard to heat transfert coefficients. However,
+  there mey still be some issues with incorrect energy balances with long time
+  steps</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl27 align=right width=62 style='height:24.0pt;
+  border-top:none;width:47pt' x:num>1056</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Check
+  statements have been made more flexible and are now handled in the kernel for
+  any Type. However, no results are currently printed when the balance is
+  closed. An warning is generated if the balance does not close</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl27 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num>1060</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Type
+  66 (calling EES) does not close EES at the end of the simulation, even if no
+  error occurred</td>
+ </tr>
+ <tr height=48 style='height:36.0pt'>
+  <td height=48 class=xl27 align=right width=62 style='height:36.0pt;
+  border-top:none;width:47pt' x:num>1061</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>The
+  new equation processor does not allow variable names starting with 'EQU' ,
+  'CON', 'INC' or 'END'. If such a variable exists, it will cause errors in
+  processing the deck but the error message does not indicate the real cause of
+  the problem</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl27 align=right width=62 style='height:24.0pt;
+  border-top:none;width:47pt' x:num>1063</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Type
+  90 (wind turbine) has been merged with Type 190. However, both Types are not
+  using the same data file format. Type 190 format has been kept. See the Wind
+  Diesel example for an example of data file</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl27 align=right width=62 style='height:24.0pt;
+  border-top:none;width:47pt' x:num>1065</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>In
+  case of errors in the simulation, TRNSYS does not always close external
+  programs (e.g. EES, Matlab, Excel) properly. You may have to close the
+  programs or terminate processes manually</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=24 style='height:18.0pt'>
+  <td height=24 class=xl25 colspan=2 style='height:18.0pt;mso-ignore:colspan'>2.
+  Known issues with the Simulation Studio</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl26 style='height:12.75pt'>Issue Nb</td>
+  <td class=xl26 style='border-left:none'>Description</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl28 align=right width=62 style='height:24.0pt;
+  border-top:none;width:47pt' x:num>2037</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>While
+  every effort has been made to ensure backwards compatibility, problems may
+  occur when updating existing IISiBat projects or importing TRNSYS 15 deck
+  files. Please contact your distributors in such cases</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl28 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num>2044</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Added
+  layers do not immediately show up in a project. You have to close and re-open
+  the project</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl28 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num>2045</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Dimensionless
+  variables are handled as variables with &quot;any&quot; dimensions by the
+  connection filter</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl28 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num>2094</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Not
+  all supported modes of Type 89 are available as a proforma</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl28 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num>2095</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Not
+  all supported modes of Type 33 are available as a proforma</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl28 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num>2136</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Type
+  50 and 94 proformas have detailed names for variables but no information when
+  you click on &quot;More&quot;</td>
+ </tr>
+ <tr height=64 style='height:48.0pt'>
+  <td height=64 class=xl28 align=right width=62 style='height:48.0pt;
+  border-top:none;width:47pt' x:num>2142</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>The
+  TPF file format has been changed in this release, which means that you cannot
+  open projects created with 16.00.0034 in previous versions of the Studio.
+  This applies to all beta releases of TRNSYS 16. The Studio projects cannot be
+  opened in IISiBat either. The new file format is backwards compatible, i.e.
+  you can open files created with all previous versions of the Studio and
+  IISiBat.</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=24 style='height:18.0pt'>
+  <td height=24 class=xl25 colspan=2 style='height:18.0pt;mso-ignore:colspan'>3.
+  Known issues with Type 56 and TRNBuild</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 colspan=2 style='height:12.75pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl26 style='height:12.75pt'>Issue Nb</td>
+  <td class=xl26 style='border-left:none'>Description</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl28 align=right width=62 style='height:24.0pt;
+  border-top:none;width:47pt' x:num>3007</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>TRNBuild
+  requires an additional copy of the user16.id file in the Building directory.
+  The Wise installation program will copy it for you and will warn you if it
+  cannot find the file</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl28 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num>3034</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>The
+  new energy balance files created by Type 56 are not easily imported in MS
+  Excel</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl28 align=right width=62 style='height:24.0pt;
+  border-top:none;width:47pt' x:num>3045</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>The
+  Win ID pool notion is confusing for most users. Please check the TRNBuild
+  manual if you have problems with window libraries</td>
+ </tr>
+ <tr height=16 style='mso-height-source:userset;height:12.0pt'>
+  <td height=16 colspan=2 style='height:12.0pt;mso-ignore:colspan'></td>
+ </tr>
+ <tr height=24 style='height:18.0pt'>
+  <td height=24 class=xl25 colspan=2 style='height:18.0pt;mso-ignore:colspan'>4.
+  Known issues with the TRNEdit and TRNExe</td>
+ </tr>
+ <tr height=24 style='height:18.0pt'>
+  <td height=24 class=xl25 style='height:18.0pt'></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl26 style='height:12.75pt'>Issue Nb</td>
+  <td class=xl26 style='border-left:none'>Description</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl27 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num>4004</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>TRNEdit:
+  File names are capitalized during parametric runs</td>
+ </tr>
+ <tr height=48 style='height:36.0pt'>
+  <td height=48 class=xl27 align=right width=62 style='height:36.0pt;
+  border-top:none;width:47pt' x:num>4007</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>TRNExe:
+  When you run a parametric table, the decks have a .tmp extension. After that
+  if you launch TRNExe directly the filter in the open box is on Standard files
+  (.dck) but there is a &quot;.tmp&quot; in the file name box so only .tmp
+  files are displayed. The problem seems to be in the .ini file</td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl27 align=right width=62 style='height:12.75pt;
+  border-top:none;width:47pt' x:num>4009</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>Open
+  deck files with double-click does not always work</td>
+ </tr>
+ <tr height=32 style='height:24.0pt'>
+  <td height=32 class=xl27 align=right width=62 style='height:24.0pt;
+  border-top:none;width:47pt' x:num>4025</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>TRNEdit:
+  Windows / output files does not find most output files. Only files using the
+  deck file name with a different extension are found</td>
+ </tr>
+ <tr height=48 style='height:36.0pt'>
+  <td height=48 class=xl27 align=right width=62 style='height:36.0pt;
+  border-top:none;width:47pt' x:num>4028</td>
+  <td class=xl28 width=637 style='border-top:none;border-left:none;width:478pt'>TRNExe
+  keeps the DLL locked when the simulation is done. Many users keep several
+  online windows open after running a simulation so they can compare results.
+  But you cannot rebuild the DLL when an online window is open, so you cannot
+  compare results from different builds that way</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=62 style='width:47pt'></td>
+  <td width=637 style='width:478pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+<!-- 
+var sc_project=1284464; 
+var sc_invisible=1; 
+var sc_partition=11; 
+var sc_security="2d2830fc"; 
+//-->
+</script>
+
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript>
+<div class="statcounter">
+<a class="statcounter" href="http://www.statcounter.com/">
+<img class="statcounter" src="http://c12.statcounter.com/counter.php?sc_project=1284464&amp;java=0&amp;security=2d2830fc&amp;invisible=1" alt="site stats" />
+</a></div></noscript>
+<!-- End of StatCounter Code -->
+
+
+</body>
+
+</html>
