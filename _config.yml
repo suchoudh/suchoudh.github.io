@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -19,3 +20,6 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+=======
+theme: jekyll-theme-slate
+>>>>>>> 32a190059947383d290ed2767c932ea75a25b8cd
