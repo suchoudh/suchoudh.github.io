@@ -1,5 +1,5 @@
 ---
 layout: post
-author: Jill
+author: jill
 ---
 Felt good talking to my old pals. 
