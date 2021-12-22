@@ -1,4 +1,4 @@
-rahu@rahu:~/1working1/suchoudh.github.io/suchoudh.github.io$ sudo bundle exec jekyll serve --trace
+" rahu@rahu:~/1working1/suchoudh.github.io/suchoudh.github.io$ sudo bundle exec jekyll serve --trace
 [sudo] password for rahu: 
 /usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
 /usr/lib/ruby/vendor_ruby/rubygems/defaults/operating_system.rb:10: warning: constant Gem::ConfigMap is deprecated
@@ -30,7 +30,7 @@ Configuration file: /home/rahu/1working1/suchoudh.github.io/suchoudh.github.io/_
  Auto-regeneration: enabled for '/home/rahu/1working1/suchoudh.github.io/suchoudh.github.io'
     Server address: http://127.0.0.1:4000
   Server running... press ctrl-c to stop.
-[2020-07-08 18:04:44] ERROR `/favicon.ico' not found.
+[2020-07-08 18:04:44] ERROR `/favicon.ico' not found." 
 
 
 
